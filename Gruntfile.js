@@ -140,7 +140,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
   ]);
 
-  grunt.registerTask('heroku:production', 'concat', 'cssmin', 'uglify', 'jshint');
+  grunt.registerTask('heroku:production', ['concat', 'cssmin', 'uglify', 'jshint']);
 
   grunt.registerTask('upload', function(n) {
     if(grunt.option('prod')) {
