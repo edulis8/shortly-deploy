@@ -20,5 +20,9 @@ public/build
 # Node modules
 node_modules/
 
+#
+db/shortly.sqlite
+
+
 # WebStorm files
 .idea/
