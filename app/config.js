@@ -1,6 +1,54 @@
 var Bookshelf = require('bookshelf');
 var path = require('path');
 
+///////////////////////////////////
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+mongoose.connect('mongodb://localhost:test');
+var dbMongo = mongoose.connection;
+
+dbMongo.on('error', function(){
+  console.log('Crazy Error')
+});
+
+dbMongo.once('open', function() {
+  // Create your schemas and models here.
+  var Cat = mongoose.model('Cat', { name: String });
+
+  var kitty = new Cat({ name: 'tacocat' });
+
+  kitty.save(function (err) {
+    if (err) {console.log('error with the cat')}
+    console.log('meow');
+  });
+
+  console.log(kitty.name)
+
+  ////////////////////////
+  var urlsSchema = new Schema ({
+    url: String,
+    base_url: String,
+    code: String,
+    title: String,
+    visits: Number
+  });
+
+  var usersSchema = new Schema ({
+    username: {type: String, unique: true},
+    password: String
+  });
+
+  var Link = mongoose.model('Link', urlsSchema);
+
+  //var link = new Link()
+
+  console.log('XXXXXXXXXX', Link);
+
+  ////////////////////////
+});
+////////////////////////////////
+//module.exports = dbMongo;
+
 var db = Bookshelf.initialize({
   client: 'sqlite3',
   connection: {

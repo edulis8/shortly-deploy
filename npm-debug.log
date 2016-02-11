@@ -1,0 +1,505 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'mongoose-unique-validator' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /Users/eric/projects/shortly-deploy/package.json
+5 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/bcrypt-nodejs/package.json
+6 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/bluebird/package.json
+7 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/bookshelf/package.json
+8 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/chai/package.json
+9 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/ejs/package.json
+10 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/express/package.json
+11 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/express-partials/package.json
+12 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/forever/package.json
+13 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/grunt/package.json
+14 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-concat/package.json
+15 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-cssmin/package.json
+16 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-jshint/package.json
+17 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-uglify/package.json
+18 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-watch/package.json
+19 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-mocha-test/package.json
+20 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-nodemon/package.json
+21 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-shell/package.json
+22 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/knex/package.json
+23 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/lodash/package.json
+24 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/mocha/package.json
+25 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/mongoose/package.json
+26 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/request/package.json
+27 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/sqlite3/package.json
+28 verbose installManyTop reading scoped package data from /Users/eric/projects/shortly-deploy/node_modules/supertest/package.json
+29 info package.json bcrypt-nodejs@0.0.3 No license field.
+30 info package.json forever@0.10.11 No license field.
+31 info package.json grunt@0.4.5 No license field.
+32 info package.json express-partials@0.2.0 No license field.
+33 info package.json ejs@0.8.8 No license field.
+34 info package.json grunt-contrib-cssmin@0.9.0 No license field.
+35 info package.json grunt-contrib-concat@0.3.0 No license field.
+36 info package.json grunt-contrib-jshint@0.9.2 No license field.
+37 info package.json grunt-contrib-uglify@0.4.1 No license field.
+38 info package.json grunt-contrib-watch@0.6.1 No license field.
+39 info package.json mocha@1.21.5 No license field.
+40 info package.json grunt-mocha-test@0.10.2 No license field.
+41 info package.json mongoose@3.8.39 No license field.
+42 info package.json sqlite3@3.0.10 No license field.
+43 verbose readDependencies loading dependencies from /Users/eric/projects/shortly-deploy/package.json
+44 silly cache add args [ 'mongoose-unique-validator', null ]
+45 verbose cache add spec mongoose-unique-validator
+46 silly cache add parsed spec { raw: 'mongoose-unique-validator',
+46 silly cache add   scope: null,
+46 silly cache add   name: 'mongoose-unique-validator',
+46 silly cache add   rawSpec: '',
+46 silly cache add   spec: '*',
+46 silly cache add   type: 'range' }
+47 silly addNamed mongoose-unique-validator@*
+48 verbose addNamed "*" is a valid semver range for mongoose-unique-validator
+49 silly addNameRange { name: 'mongoose-unique-validator', range: '*', hasData: false }
+50 silly mapToRegistry name mongoose-unique-validator
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/mongoose-unique-validator
+54 verbose addNameRange registry:https://registry.npmjs.org/mongoose-unique-validator not in flight; fetching
+55 verbose request uri https://registry.npmjs.org/mongoose-unique-validator
+56 verbose request no auth needed
+57 info attempt registry request try #1 at 12:18:50 PM
+58 verbose request id 4123196526e92baa
+59 http request GET https://registry.npmjs.org/mongoose-unique-validator
+60 http 200 https://registry.npmjs.org/mongoose-unique-validator
+61 silly get cb [ 200,
+61 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+61 silly get     etag: '"C465KTWK5WXA13EZAOSU4JJ80"',
+61 silly get     'content-type': 'application/json',
+61 silly get     'cache-control': 'max-age=300',
+61 silly get     'content-length': '21860',
+61 silly get     'accept-ranges': 'bytes',
+61 silly get     date: 'Thu, 11 Feb 2016 20:18:51 GMT',
+61 silly get     via: '1.1 varnish',
+61 silly get     age: '0',
+61 silly get     connection: 'keep-alive',
+61 silly get     'x-served-by': 'cache-sjc3133-SJC',
+61 silly get     'x-cache': 'HIT',
+61 silly get     'x-cache-hits': '1',
+61 silly get     'x-timer': 'S1455221931.164665,VS0,VE42',
+61 silly get     vary: 'Accept' } ]
+62 verbose get saving mongoose-unique-validator to /Users/eric/.npm/registry.npmjs.org/mongoose-unique-validator/.cache.json
+63 silly addNameRange number 2 { name: 'mongoose-unique-validator', range: '*', hasData: true }
+64 silly addNameRange versions [ 'mongoose-unique-validator',
+64 silly addNameRange   [ '0.1.0',
+64 silly addNameRange     '0.1.1',
+64 silly addNameRange     '0.1.2',
+64 silly addNameRange     '0.2.0',
+64 silly addNameRange     '0.3.0',
+64 silly addNameRange     '0.4.1',
+64 silly addNameRange     '0.5.0',
+64 silly addNameRange     '0.5.1',
+64 silly addNameRange     '0.6.0',
+64 silly addNameRange     '0.6.1',
+64 silly addNameRange     '0.6.2',
+64 silly addNameRange     '1.0.0' ] ]
+65 silly addNamed mongoose-unique-validator@1.0.0
+66 verbose addNamed "1.0.0" is a plain semver version for mongoose-unique-validator
+67 silly mapToRegistry name mongoose-unique-validator
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/mongoose-unique-validator
+71 verbose addRemoteTarball https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.0.tgz not in flight; adding
+72 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.0.tgz',
+72 verbose addRemoteTarball   '6481306e133afb123f00eabab4a220e2874d8c6a' ]
+73 info retry fetch attempt 1 at 12:18:50 PM
+74 info attempt registry request try #1 at 12:18:50 PM
+75 http fetch GET https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.0.tgz
+76 http fetch 200 https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.0.tgz
+77 silly fetchAndShaCheck shasum 6481306e133afb123f00eabab4a220e2874d8c6a
+78 verbose addTmpTarball /var/folders/5d/72m44gm57qngxnbzk43kmb640000gn/T/npm-3457-38f8b325/registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.0.tgz not in flight; adding
+79 verbose addTmpTarball already have metadata; skipping unpack for mongoose-unique-validator@1.0.0
+80 silly cache afterAdd mongoose-unique-validator@1.0.0
+81 verbose afterAdd /Users/eric/.npm/mongoose-unique-validator/1.0.0/package/package.json not in flight; writing
+82 verbose afterAdd /Users/eric/.npm/mongoose-unique-validator/1.0.0/package/package.json written
+83 silly install resolved [ { name: 'mongoose-unique-validator',
+83 silly install resolved     version: '1.0.0',
+83 silly install resolved     description: 'mongoose-unique-validator is a plugin which adds pre-save validation for unique fields within a Mongoose schema.',
+83 silly install resolved     main: 'index.js',
+83 silly install resolved     scripts:
+83 silly install resolved      { test: 'mocha test && ./node_modules/eslint/bin/eslint.js index.js test',
+83 silly install resolved        lint: 'eslint index.js test' },
+83 silly install resolved     keywords: [ 'mongoose', 'unique', 'validator' ],
+83 silly install resolved     author:
+83 silly install resolved      { name: 'Blake Haswell',
+83 silly install resolved        email: 'haswell00@gmail.com',
+83 silly install resolved        url: 'http://blakehaswell.com/' },
+83 silly install resolved     contributors: [ [Object] ],
+83 silly install resolved     license: 'MIT',
+83 silly install resolved     repository:
+83 silly install resolved      { type: 'git',
+83 silly install resolved        url: 'git+https://github.com/blakehaswell/mongoose-unique-validator.git' },
+83 silly install resolved     devDependencies:
+83 silly install resolved      { bluebird: '^3.2.2',
+83 silly install resolved        chai: '^3.3.0',
+83 silly install resolved        eslint: '^1.6.0',
+83 silly install resolved        mocha: '^2.3.3' },
+83 silly install resolved     peerDependencies: { mongoose: '^4.2.8' },
+83 silly install resolved     dependencies: { 'lodash.get': '^4.0.2' },
+83 silly install resolved     gitHead: 'f953a748e820b0d1f2cbe578f02e16aaefa14868',
+83 silly install resolved     bugs: { url: 'https://github.com/blakehaswell/mongoose-unique-validator/issues' },
+83 silly install resolved     homepage: 'https://github.com/blakehaswell/mongoose-unique-validator#readme',
+83 silly install resolved     _id: 'mongoose-unique-validator@1.0.0',
+83 silly install resolved     _shasum: '6481306e133afb123f00eabab4a220e2874d8c6a',
+83 silly install resolved     _from: 'mongoose-unique-validator@*',
+83 silly install resolved     _npmVersion: '3.3.8',
+83 silly install resolved     _nodeVersion: '4.2.1',
+83 silly install resolved     _npmUser: { name: 'viveleroi', email: 'botsko@gmail.com' },
+83 silly install resolved     dist:
+83 silly install resolved      { shasum: '6481306e133afb123f00eabab4a220e2874d8c6a',
+83 silly install resolved        tarball: 'http://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.0.tgz' },
+83 silly install resolved     maintainers: [ [Object], [Object] ],
+83 silly install resolved     _npmOperationalInternal:
+83 silly install resolved      { host: 'packages-6-west.internal.npmjs.com',
+83 silly install resolved        tmp: 'tmp/mongoose-unique-validator-1.0.0.tgz_1454713724535_0.17745648906566203' },
+83 silly install resolved     directories: {},
+83 silly install resolved     _resolved: 'https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.0.tgz' } ]
+84 info install mongoose-unique-validator@1.0.0 into /Users/eric/projects/shortly-deploy
+85 info installOne mongoose-unique-validator@1.0.0
+86 verbose installOne of mongoose-unique-validator to /Users/eric/projects/shortly-deploy not in flight; installing
+87 verbose lock using /Users/eric/.npm/_locks/mongoose-unique-validato-74ccaea981c5cdf5.lock for /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator
+88 silly install write writing mongoose-unique-validator 1.0.0 to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator
+89 verbose unbuild node_modules/mongoose-unique-validator
+90 silly gentlyRm /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator is being purged from base /Users/eric/projects/shortly-deploy
+91 verbose gentlyRm don't care about contents; nuking /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator
+92 verbose tar unpack /Users/eric/.npm/mongoose-unique-validator/1.0.0/package.tgz
+93 verbose tar unpacking to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator
+94 silly gentlyRm /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator is being purged
+95 verbose gentlyRm don't care about contents; nuking /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator
+96 silly gunzTarPerm modes [ '755', '644' ]
+97 silly gunzTarPerm extractEntry package.json
+98 silly gunzTarPerm extractEntry .npmignore
+99 silly gunzTarPerm extractEntry README.md
+100 silly gunzTarPerm extractEntry index.js
+101 silly gunzTarPerm extractEntry CONTRIBUTING.md
+102 silly gunzTarPerm extractEntry .eslintrc
+103 silly gunzTarPerm extractEntry .editorconfig
+104 silly gunzTarPerm extractEntry .travis.yml
+105 silly gunzTarPerm extractEntry test/helpers.js
+106 silly gunzTarPerm extractEntry test/index.spec.js
+107 silly gunzTarPerm extractEntry test/tests/messages.spec.js
+108 silly gunzTarPerm extractEntry test/tests/validation.spec.js
+109 verbose write writing to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/package.json
+110 info preinstall mongoose-unique-validator@1.0.0
+111 verbose readDependencies loading dependencies from /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/package.json
+112 silly prepareForInstallMany adding lodash.get@^4.0.2 from mongoose-unique-validator dependencies
+113 silly prepareForInstallMany adding mongoose@^4.2.8 from mongoose-unique-validator peerDependencies
+114 warn peerDependencies The peer dependency mongoose@^4.2.8 included from mongoose-unique-validator will no
+115 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+116 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+117 verbose readDependencies loading dependencies from /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/package.json
+118 silly cache add args [ 'lodash.get@^4.0.2', null ]
+119 verbose cache add spec lodash.get@^4.0.2
+120 silly cache add parsed spec { raw: 'lodash.get@^4.0.2',
+120 silly cache add   scope: null,
+120 silly cache add   name: 'lodash.get',
+120 silly cache add   rawSpec: '^4.0.2',
+120 silly cache add   spec: '>=4.0.2 <5.0.0',
+120 silly cache add   type: 'range' }
+121 silly addNamed lodash.get@>=4.0.2 <5.0.0
+122 verbose addNamed ">=4.0.2 <5.0.0" is a valid semver range for lodash.get
+123 silly addNameRange { name: 'lodash.get', range: '>=4.0.2 <5.0.0', hasData: false }
+124 silly mapToRegistry name lodash.get
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry uri https://registry.npmjs.org/lodash.get
+128 verbose addNameRange registry:https://registry.npmjs.org/lodash.get not in flight; fetching
+129 verbose request uri https://registry.npmjs.org/lodash.get
+130 verbose request no auth needed
+131 info attempt registry request try #1 at 12:18:50 PM
+132 http request GET https://registry.npmjs.org/lodash.get
+133 http 200 https://registry.npmjs.org/lodash.get
+134 silly get cb [ 200,
+134 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+134 silly get     etag: '"6H5FKWTBONCQO46EYBDOGMLB4"',
+134 silly get     'content-type': 'application/json',
+134 silly get     'cache-control': 'max-age=300',
+134 silly get     'content-length': '9235',
+134 silly get     'accept-ranges': 'bytes',
+134 silly get     date: 'Thu, 11 Feb 2016 20:18:51 GMT',
+134 silly get     via: '1.1 varnish',
+134 silly get     age: '51',
+134 silly get     connection: 'keep-alive',
+134 silly get     'x-served-by': 'cache-sjc3122-SJC',
+134 silly get     'x-cache': 'HIT',
+134 silly get     'x-cache-hits': '1',
+134 silly get     'x-timer': 'S1455221931.708768,VS0,VE0',
+134 silly get     vary: 'Accept' } ]
+135 verbose get saving lodash.get to /Users/eric/.npm/registry.npmjs.org/lodash.get/.cache.json
+136 silly addNameRange number 2 { name: 'lodash.get', range: '>=4.0.2 <5.0.0', hasData: true }
+137 silly addNameRange versions [ 'lodash.get',
+137 silly addNameRange   [ '3.7.0', '4.0.0', '4.0.1', '4.0.2', '4.1.0' ] ]
+138 silly addNamed lodash.get@4.1.0
+139 verbose addNamed "4.1.0" is a plain semver version for lodash.get
+140 silly mapToRegistry name lodash.get
+141 silly mapToRegistry using default registry
+142 silly mapToRegistry registry https://registry.npmjs.org/
+143 silly mapToRegistry uri https://registry.npmjs.org/lodash.get
+144 verbose addRemoteTarball https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.0.tgz not in flight; adding
+145 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.0.tgz',
+145 verbose addRemoteTarball   'e110110c32d3225f0b5b66558d91d2d8d7a27e2b' ]
+146 info retry fetch attempt 1 at 12:18:51 PM
+147 info attempt registry request try #1 at 12:18:51 PM
+148 http fetch GET https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.0.tgz
+149 http fetch 200 https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.0.tgz
+150 silly fetchAndShaCheck shasum e110110c32d3225f0b5b66558d91d2d8d7a27e2b
+151 verbose addTmpTarball /var/folders/5d/72m44gm57qngxnbzk43kmb640000gn/T/npm-3457-38f8b325/registry.npmjs.org/lodash.get/-/lodash.get-4.1.0.tgz not in flight; adding
+152 verbose addTmpTarball already have metadata; skipping unpack for lodash.get@4.1.0
+153 silly cache afterAdd lodash.get@4.1.0
+154 verbose afterAdd /Users/eric/.npm/lodash.get/4.1.0/package/package.json not in flight; writing
+155 verbose afterAdd /Users/eric/.npm/lodash.get/4.1.0/package/package.json written
+156 silly install resolved [ { name: 'lodash.get',
+156 silly install resolved     version: '4.1.0',
+156 silly install resolved     description: 'The lodash method `_.get` exported as a module.',
+156 silly install resolved     homepage: 'https://lodash.com/',
+156 silly install resolved     icon: 'https://lodash.com/icon.svg',
+156 silly install resolved     license: 'MIT',
+156 silly install resolved     keywords: [ 'lodash-modularized', 'get' ],
+156 silly install resolved     author:
+156 silly install resolved      { name: 'John-David Dalton',
+156 silly install resolved        email: 'john.david.dalton@gmail.com',
+156 silly install resolved        url: 'http://allyoucanleet.com/' },
+156 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+156 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+156 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+156 silly install resolved     dependencies: { 'lodash._root': '^3.0.0' },
+156 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+156 silly install resolved     _id: 'lodash.get@4.1.0',
+156 silly install resolved     _shasum: 'e110110c32d3225f0b5b66558d91d2d8d7a27e2b',
+156 silly install resolved     _from: 'lodash.get@>=4.0.2 <5.0.0',
+156 silly install resolved     _npmVersion: '2.14.18',
+156 silly install resolved     _nodeVersion: '5.5.0',
+156 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+156 silly install resolved     dist:
+156 silly install resolved      { shasum: 'e110110c32d3225f0b5b66558d91d2d8d7a27e2b',
+156 silly install resolved        tarball: 'http://registry.npmjs.org/lodash.get/-/lodash.get-4.1.0.tgz' },
+156 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+156 silly install resolved     _npmOperationalInternal:
+156 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+156 silly install resolved        tmp: 'tmp/lodash.get-4.1.0.tgz_1454898396668_0.48346277163363993' },
+156 silly install resolved     directories: {},
+156 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash.get/-/lodash.get-4.1.0.tgz' } ]
+157 info install lodash.get@4.1.0 into /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator
+158 info installOne lodash.get@4.1.0
+159 verbose installOne of lodash.get to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator not in flight; installing
+160 verbose lock using /Users/eric/.npm/_locks/lodash-get-b8bb137a47f8bb86.lock for /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get
+161 silly install write writing lodash.get 4.1.0 to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get
+162 verbose unbuild node_modules/mongoose-unique-validator/node_modules/lodash.get
+163 silly gentlyRm /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get is being purged from base /Users/eric/projects/shortly-deploy
+164 verbose gentlyRm don't care about contents; nuking /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get
+165 verbose tar unpack /Users/eric/.npm/lodash.get/4.1.0/package.tgz
+166 verbose tar unpacking to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get
+167 silly gentlyRm /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get is being purged
+168 verbose gentlyRm don't care about contents; nuking /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get
+169 silly gunzTarPerm modes [ '755', '644' ]
+170 silly gunzTarPerm extractEntry package.json
+171 silly gunzTarPerm extractEntry README.md
+172 silly gunzTarPerm extractEntry LICENSE
+173 silly gunzTarPerm extractEntry index.js
+174 verbose write writing to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/package.json
+175 info preinstall lodash.get@4.1.0
+176 verbose readDependencies loading dependencies from /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/package.json
+177 silly prepareForInstallMany adding lodash._root@^3.0.0 from lodash.get dependencies
+178 verbose readDependencies loading dependencies from /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/package.json
+179 silly cache add args [ 'lodash._root@^3.0.0', null ]
+180 verbose cache add spec lodash._root@^3.0.0
+181 silly cache add parsed spec { raw: 'lodash._root@^3.0.0',
+181 silly cache add   scope: null,
+181 silly cache add   name: 'lodash._root',
+181 silly cache add   rawSpec: '^3.0.0',
+181 silly cache add   spec: '>=3.0.0 <4.0.0',
+181 silly cache add   type: 'range' }
+182 silly addNamed lodash._root@>=3.0.0 <4.0.0
+183 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash._root
+184 silly addNameRange { name: 'lodash._root', range: '>=3.0.0 <4.0.0', hasData: false }
+185 silly mapToRegistry name lodash._root
+186 silly mapToRegistry using default registry
+187 silly mapToRegistry registry https://registry.npmjs.org/
+188 silly mapToRegistry uri https://registry.npmjs.org/lodash._root
+189 verbose addNameRange registry:https://registry.npmjs.org/lodash._root not in flight; fetching
+190 verbose request uri https://registry.npmjs.org/lodash._root
+191 verbose request no auth needed
+192 info attempt registry request try #1 at 12:18:51 PM
+193 http request GET https://registry.npmjs.org/lodash._root
+194 http 200 https://registry.npmjs.org/lodash._root
+195 silly get cb [ 200,
+195 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+195 silly get     etag: '"2SAESBOJJQGAX9AF72FD3BJDX"',
+195 silly get     'content-type': 'application/json',
+195 silly get     'cache-control': 'max-age=300',
+195 silly get     'content-length': '2978',
+195 silly get     'accept-ranges': 'bytes',
+195 silly get     date: 'Thu, 11 Feb 2016 20:18:52 GMT',
+195 silly get     via: '1.1 varnish',
+195 silly get     age: '143',
+195 silly get     connection: 'keep-alive',
+195 silly get     'x-served-by': 'cache-sjc3132-SJC',
+195 silly get     'x-cache': 'HIT',
+195 silly get     'x-cache-hits': '9',
+195 silly get     'x-timer': 'S1455221932.000689,VS0,VE0',
+195 silly get     vary: 'Accept' } ]
+196 verbose get saving lodash._root to /Users/eric/.npm/registry.npmjs.org/lodash._root/.cache.json
+197 silly addNameRange number 2 { name: 'lodash._root', range: '>=3.0.0 <4.0.0', hasData: true }
+198 silly addNameRange versions [ 'lodash._root', [ '3.0.0' ] ]
+199 silly addNamed lodash._root@3.0.0
+200 verbose addNamed "3.0.0" is a plain semver version for lodash._root
+201 silly mapToRegistry name lodash._root
+202 silly mapToRegistry using default registry
+203 silly mapToRegistry registry https://registry.npmjs.org/
+204 silly mapToRegistry uri https://registry.npmjs.org/lodash._root
+205 verbose addRemoteTarball https://registry.npmjs.org/lodash._root/-/lodash._root-3.0.0.tgz not in flight; adding
+206 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash._root/-/lodash._root-3.0.0.tgz',
+206 verbose addRemoteTarball   'fe2fba5117f3e12c3cf7e13b3993b20f745727b7' ]
+207 info retry fetch attempt 1 at 12:18:51 PM
+208 info attempt registry request try #1 at 12:18:51 PM
+209 http fetch GET https://registry.npmjs.org/lodash._root/-/lodash._root-3.0.0.tgz
+210 http fetch 200 https://registry.npmjs.org/lodash._root/-/lodash._root-3.0.0.tgz
+211 silly fetchAndShaCheck shasum fe2fba5117f3e12c3cf7e13b3993b20f745727b7
+212 verbose addTmpTarball /var/folders/5d/72m44gm57qngxnbzk43kmb640000gn/T/npm-3457-38f8b325/registry.npmjs.org/lodash._root/-/lodash._root-3.0.0.tgz not in flight; adding
+213 verbose addTmpTarball already have metadata; skipping unpack for lodash._root@3.0.0
+214 silly cache afterAdd lodash._root@3.0.0
+215 verbose afterAdd /Users/eric/.npm/lodash._root/3.0.0/package/package.json not in flight; writing
+216 verbose afterAdd /Users/eric/.npm/lodash._root/3.0.0/package/package.json written
+217 silly install resolved [ { name: 'lodash._root',
+217 silly install resolved     version: '3.0.0',
+217 silly install resolved     description: 'The internal lodash function `root` exported as a module.',
+217 silly install resolved     homepage: 'https://lodash.com/',
+217 silly install resolved     icon: 'https://lodash.com/icon.svg',
+217 silly install resolved     license: 'MIT',
+217 silly install resolved     author:
+217 silly install resolved      { name: 'John-David Dalton',
+217 silly install resolved        email: 'john.david.dalton@gmail.com',
+217 silly install resolved        url: 'http://allyoucanleet.com/' },
+217 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+217 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+217 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+217 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+217 silly install resolved     _id: 'lodash._root@3.0.0',
+217 silly install resolved     _shasum: 'fe2fba5117f3e12c3cf7e13b3993b20f745727b7',
+217 silly install resolved     _from: 'lodash._root@>=3.0.0 <4.0.0',
+217 silly install resolved     _npmVersion: '2.14.18',
+217 silly install resolved     _nodeVersion: '5.5.0',
+217 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+217 silly install resolved     dist:
+217 silly install resolved      { shasum: 'fe2fba5117f3e12c3cf7e13b3993b20f745727b7',
+217 silly install resolved        tarball: 'http://registry.npmjs.org/lodash._root/-/lodash._root-3.0.0.tgz' },
+217 silly install resolved     maintainers: [ [Object] ],
+217 silly install resolved     _npmOperationalInternal:
+217 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+217 silly install resolved        tmp: 'tmp/lodash._root-3.0.0.tgz_1454898276727_0.4872864377684891' },
+217 silly install resolved     directories: {},
+217 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash._root/-/lodash._root-3.0.0.tgz' } ]
+218 info install lodash._root@3.0.0 into /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get
+219 info installOne lodash._root@3.0.0
+220 verbose installOne of lodash._root to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get not in flight; installing
+221 verbose lock using /Users/eric/.npm/_locks/lodash-root-183cb99531b0aedc.lock for /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root
+222 silly install write writing lodash._root 3.0.0 to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root
+223 verbose unbuild node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root
+224 silly gentlyRm /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root is being purged from base /Users/eric/projects/shortly-deploy
+225 verbose gentlyRm don't care about contents; nuking /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root
+226 verbose tar unpack /Users/eric/.npm/lodash._root/3.0.0/package.tgz
+227 verbose tar unpacking to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root
+228 silly gentlyRm /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root is being purged
+229 verbose gentlyRm don't care about contents; nuking /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root
+230 silly gunzTarPerm modes [ '755', '644' ]
+231 silly gunzTarPerm extractEntry package.json
+232 silly gunzTarPerm extractEntry README.md
+233 silly gunzTarPerm extractEntry LICENSE
+234 silly gunzTarPerm extractEntry index.js
+235 verbose write writing to /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root/package.json
+236 info preinstall lodash._root@3.0.0
+237 verbose readDependencies loading dependencies from /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root/package.json
+238 verbose readDependencies loading dependencies from /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root/package.json
+239 silly install resolved []
+240 verbose about to build /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root
+241 info build /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root
+242 info linkStuff lodash._root@3.0.0
+243 silly linkStuff lodash._root@3.0.0 has /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules as its parent node_modules
+244 verbose linkBins lodash._root@3.0.0
+245 verbose linkMans lodash._root@3.0.0
+246 verbose rebuildBundles lodash._root@3.0.0
+247 info install lodash._root@3.0.0
+248 info postinstall lodash._root@3.0.0
+249 verbose unlock done using /Users/eric/.npm/_locks/lodash-root-183cb99531b0aedc.lock for /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get/node_modules/lodash._root
+250 verbose about to build /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get
+251 info build /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get
+252 info linkStuff lodash.get@4.1.0
+253 silly linkStuff lodash.get@4.1.0 has /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules as its parent node_modules
+254 verbose linkBins lodash.get@4.1.0
+255 verbose linkMans lodash.get@4.1.0
+256 verbose rebuildBundles lodash.get@4.1.0
+257 verbose rebuildBundles [ 'lodash._root' ]
+258 info install lodash.get@4.1.0
+259 info postinstall lodash.get@4.1.0
+260 verbose unlock done using /Users/eric/.npm/_locks/lodash-get-b8bb137a47f8bb86.lock for /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/node_modules/lodash.get
+261 verbose about to build /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator
+262 info build /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator
+263 info linkStuff mongoose-unique-validator@1.0.0
+264 silly linkStuff mongoose-unique-validator@1.0.0 has /Users/eric/projects/shortly-deploy/node_modules as its parent node_modules
+265 verbose linkBins mongoose-unique-validator@1.0.0
+266 verbose linkMans mongoose-unique-validator@1.0.0
+267 verbose rebuildBundles mongoose-unique-validator@1.0.0
+268 verbose rebuildBundles [ 'lodash.get' ]
+269 info install mongoose-unique-validator@1.0.0
+270 info postinstall mongoose-unique-validator@1.0.0
+271 verbose readDependencies loading dependencies from /Users/eric/projects/shortly-deploy/package.json
+272 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/bcrypt-nodejs/package.json
+273 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/bluebird/package.json
+274 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/bookshelf/package.json
+275 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/chai/package.json
+276 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/ejs/package.json
+277 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/express/package.json
+278 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/express-partials/package.json
+279 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/forever/package.json
+280 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/grunt/package.json
+281 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-concat/package.json
+282 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-cssmin/package.json
+283 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-jshint/package.json
+284 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-uglify/package.json
+285 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-contrib-watch/package.json
+286 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-mocha-test/package.json
+287 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-nodemon/package.json
+288 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/grunt-shell/package.json
+289 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/knex/package.json
+290 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/lodash/package.json
+291 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/mocha/package.json
+292 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/mongoose/package.json
+293 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator/package.json
+294 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/request/package.json
+295 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/sqlite3/package.json
+296 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/supertest/package.json
+297 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/.bin/express/package.json
+298 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/.bin/forever/package.json
+299 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/.bin/foreverd/package.json
+300 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/.bin/knex/package.json
+301 verbose targetResolver reading package data from /Users/eric/projects/shortly-deploy/node_modules/.bin/mocha/package.json
+302 verbose already installed skipping mongoose@^4.2.8 /Users/eric/projects/shortly-deploy
+303 silly install resolved []
+304 verbose unlock done using /Users/eric/.npm/_locks/mongoose-unique-validato-74ccaea981c5cdf5.lock for /Users/eric/projects/shortly-deploy/node_modules/mongoose-unique-validator
+305 verbose validateInstall loading /Users/eric/projects/shortly-deploy/package.json for validation
+306 verbose stack Error: The package mongoose does not satisfy its siblings' peerDependencies requirements!
+306 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+306 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:267:7
+306 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+306 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+306 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+306 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+306 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+306 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+306 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+306 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+307 verbose cwd /Users/eric/projects/shortly-deploy
+308 error Darwin 15.3.0
+309 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "mongoose-unique-validator"
+310 error node v0.12.7
+311 error npm  v2.11.3
+312 error code EPEERINVALID
+313 error peerinvalid The package mongoose does not satisfy its siblings' peerDependencies requirements!
+313 error peerinvalid Peer mongoose-unique-validator@1.0.0 wants mongoose@^4.2.8
+314 verbose exit [ 1, true ]
