@@ -10,7 +10,6 @@
   "license": "Proprietary",
   "private": true,
   "scripts": {
-    "postinstall": "grunt",
     "start": "node index.js"
   },
   "dependencies": {
