@@ -3,6 +3,25 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     concat: {
+      options: {
+        separator: ';'
+      },
+      dist : {
+        src : [
+              'public/lib/jquery.js',
+              'public/lib/underscore.js',
+              'public/lib/backbone.js',
+              'public/lib/handlebars.js',
+              'public/client/app.js',
+              'public/client/link.js',
+              'public/client/links.js',
+              'public/client/linkView.js',
+              'public/client/linksView.js',
+              'public/client/createLinkView.js',
+              'public/client/router.js'
+              ],
+        dest : 'public/build/production.js'
+      }
     },
 
     mochaTest: {
@@ -21,6 +40,11 @@ module.exports = function(grunt) {
     },
 
     uglify: {
+      build: {
+        src: 'public/build/production.js',
+        dest: 'public/build/production.min.js'
+      }
+      
     },
 
     jshint: {
@@ -38,6 +62,10 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
+      css: {
+        src: 'public/style.css',
+        dest: 'public/build/production.min.css'
+      }
     },
 
     watch: {
@@ -88,6 +116,8 @@ module.exports = function(grunt) {
   ////////////////////////////////////////////////////
   // Main grunt tasks
   ////////////////////////////////////////////////////
+
+  grunt.registerTask('default', ['concat', 'cssmin', 'uglify']);
 
   grunt.registerTask('test', [
     'mochaTest'

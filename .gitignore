@@ -3,6 +3,7 @@
 .LSOverride
 azure.err
 iisnode.yml
+.env
 
 # Icon must ends with two \r.
 Icon
@@ -14,7 +15,7 @@ Icon
 .flooignore
 
 # Build files
-public/dist/
+public/build
 
 # Node modules
 node_modules/
