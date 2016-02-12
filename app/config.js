@@ -1,6 +1,6 @@
 var Bookshelf = require('bookshelf');
 var path = require('path');
-
+/////Can do if(NODE_ENV === production) use mongo, else use sqlite (e.g)
 ///////////////////////////////////
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;

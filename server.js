@@ -11,6 +11,7 @@ app.configure(function() {
     app.set('view engine', 'ejs');
     app.use(partials());
     app.use(express.bodyParser());
+    //all static files in public, just serve them up for us
     app.use(express.static(__dirname + '/public'));
     app.use(express.cookieParser('shhhh, very secret'));
     app.use(express.session());

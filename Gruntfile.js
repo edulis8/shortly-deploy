@@ -6,6 +6,7 @@ module.exports = function(grunt) {
       options: {
         separator: ';'
       },
+      //common names here -- prod, build, dist:
       dist : {
         src : [
               'public/client/app.js',
@@ -46,6 +47,7 @@ module.exports = function(grunt) {
     },
 
     uglify: {
+      // target: can have as many as you want, for distribution, testing, staging, etc:
       build: {
         src: 'public/build/production-client.js',
         dest: 'public/build/production-client.min.js'
@@ -101,10 +103,16 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
+        //command: 'git push heroku master',
+        //options {
+          //stout: true
+//          sterr: true
+//      failOnError: true
+          //}
       }
     },
   });
-
+  // need to do this not just have them in package.json
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -113,7 +121,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-nodemon');
-
+ // Our own tasks:
   grunt.registerTask('server-dev', function (target) {
     // Running nodejs in a different process and displaying output on the main console
     var nodemon = grunt.util.spawn({
@@ -130,28 +138,41 @@ module.exports = function(grunt) {
   ////////////////////////////////////////////////////
   // Main grunt tasks
   ////////////////////////////////////////////////////
-
+  //                              'build'
   grunt.registerTask('default', ['concat', 'cssmin', 'uglify', 'jshint']);
 
   grunt.registerTask('test', [
+    //jshint
     'mochaTest'
   ]);
 
   grunt.registerTask('build', [
+    //concat
+    //uglify
+    //cssmin
   ]);
-
+  //this gets called for us by buildpack:         here could be just- 'build'
   grunt.registerTask('heroku:production', ['concat', 'cssmin', 'uglify', 'jshint']);
 
   grunt.registerTask('upload', function(n) {
+    // if in prod environment:
     if(grunt.option('prod')) {
       // add your production server task here
+      //                  pick a target
+      // grunt.task.run(['shell:prodServer'])
+      // grunt shell runs all targets
+      // grunt shell:prodServer or maybe grunt shell --prod just does the one
     } else {
+      //if in dev environment:
       grunt.task.run([ 'server-dev' ]);
     }
   });
 
   grunt.registerTask('deploy', [
     // add your deploy tasks here
+    // test
+    // build
+    // upload
   ]);
 
 
